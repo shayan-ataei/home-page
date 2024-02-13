@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;700;800&display=swap');
+@import url('https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css');
+
+body {
+  background-color:#FBE4D8;
+  margin: 0;
+  font: 600 18px 'Source Sans Pro', sans-serif;
+  letter-spacing: 0.64px;
+  color: #190019;
+}
+.topnav {
+  background-color:#854F6C;
+  color:#DFB6B2;
+  padding:10px;
+}
+.topnav a:link, .topnav a:visited {
+  text-decoration: none;
+  color: #190019; 
+}
+.topnav a:hover, .topnav a:active {
+  text-decoration: underline;
+}
+.mycard {
+  background-color: #DFB6B2;
+  background-image: linear-gradient(to bottom, #2B124C, #854F6C); 
+  background-size: 100% 120px;
+  background-repeat: no-repeat;
+  margin: 40px auto;
+  width: 350px;
+  border-radius: 5px;
+  box-shadow: 0 5px 7px -1px rgba(51, 51, 51, 0.23); 
+  padding: 20px;
+}
+.mycard h1 {
+  text-align: center;
+  color:#DFB6B2;
+  margin:20px 0 60px 0;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+li {
+  background-color: #FBE4D8;
+  background-image: linear-gradient(to right,  #2B124C, #854F6C); 
+  background-size: 50px 60px;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  transition: transform .25s;
+  border-radius: 5px;
+  box-shadow: 0 5px 7px -1px rgba(51, 51, 51, 0.23);
+  padding: 15px;
+  padding-left: 70px;
+  margin-top: 5px;
+}
+li:hover {
+  transform: scale(1.1);
+  text-decoration: none;
+}
+a:link, a:visited {
+  color: #190019; 
+  text-decoration: none;
+}
+.main, .main h1 {
+  text-align:center;
+  color:#190019;
+}
+
+.footer p {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #DFB6B2;
+  text-align: center;
+}
+
+.footer {
+  margin-top: auto;
+  padding: 0.5rem 0;
+  border-top: solid 1px var(--color-light);
+}
+
+.btn {
+  padding: 0.25rem 0.75rem;
+  border-radius: var(--border-radius);
+  background-color: var(--color-white);
+  border: solid 1px var(--color-white);
+  color: var(--color-dark);
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 1rem;
+  min-width: 6rem;
+  text-align: center;
+}
+
+.btn:hover {
+  text-decoration: none;
+}
+.btn-outline {
+  border: solid 1px var(--color-primary);
+}
+
+.btn-primary {
+  border: solid 1px var(--color-primary);
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}
