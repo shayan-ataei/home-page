@@ -7,11 +7,13 @@
         <link rel="stylesheet" href="{% static '/css/style.css' %}">
     </head>
 
-    <body>
-
+    
+    <body> <!--style="padding-bottom: 1000px;"-->
 
         <div class="topnav">
-            <a href="/">HOME</a> |
+            <a href="/"><button class="home-button">
+                <img class="home-color" src="{% static 'icons/house-solid.svg' %}" />
+            </button>HOME</a> |
             <a href="/account">ACCOUNT</a> |
             <a href="/product">PRODUCT</a> |
             <a href="/contact_us">CONTACT US</a>
@@ -25,15 +27,14 @@
             </ul>
         </div>
 
+
         <nav></nav>
 
         <section>
         </section>
 
         <footer class="footer">
-            <div class="container">
-                <p>Shayan Ataei || <a href="https://github.com/shayan-ataei/home-page">GitHub</a></p>
-            </div>
+            <p class="footer-p">Shayan Ataei || <a class="footer-a" href="https://github.com/shayan-ataei/home-page" target="_blank">GitHub</a></p>
         </footer>
 
     </body>
