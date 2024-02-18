@@ -1,42 +1,14 @@
+{% extends "base.html" %}
+
 {% load static %}
-<!DOCTYPE html>
-<html>
-
-    <head>
-        <title>HOME</title>
-        <link rel="stylesheet" href="{% static '/css/style.css' %}">
-    </head>
-
-    
-    <body> <!--style="padding-bottom: 1000px;"-->
-
-        <div class="topnav">
-            <a href="/"><button class="home-button">
-                <img class="home-color" src="{% static 'icons/house-solid.svg' %}" />
-            </button>HOME</a> |
-            <a href="/account">ACCOUNT</a> |
-            <a href="/product">PRODUCT</a> |
-            <a href="/contact_us">CONTACT US</a>
-        </div>
-
-        <div class="mycard">
-            <h1>HOME</h1>
-            <ul>
-                <a href="/account"><li>Account</li></a>
-                <a href="/product"><li>Product</li></a>
-            </ul>
-        </div>
 
 
-        <nav></nav>
-
-        <section>
-        </section>
-
-        <footer class="footer">
-            <p class="footer-p">Shayan Ataei || <a class="footer-a" href="https://github.com/shayan-ataei/home-page" target="_blank">GitHub</a></p>
-        </footer>
-
-    </body>
-
-</html>
+{% block content %}
+    <div class="mycard">
+        <h1>HOME</h1>
+        <ul>
+            <a href="/account"><li>Account</li></a>
+            <a href="/product"><li>Product</li></a>
+        </ul>
+    </div>
+{% endblock content %}

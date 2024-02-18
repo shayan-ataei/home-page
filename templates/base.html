@@ -1,33 +1,35 @@
 {% load static %}
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
     <head>
-        <title>HOME</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{% static '/css/general.css' %}">
         <link rel="stylesheet" href="{% static '/css/style.css' %}">
+        <title>HOME</title>
     </head>
 
     <body>
-
-
         <div class="topnav">
             <a href="/"><button class="home-button">
-                <img class="home-color" src="{% static 'icons/house-solid.svg' %}" />
+                <img class="home-color" src="{% static 'icons/home.svg' %}"/>
             </button>HOME</a> |
             <a href="/account">ACCOUNT</a> |
             <a href="/product">PRODUCT</a> |
             <a href="/contact_us">CONTACT US</a>
         </div>
 
-        <nav></nav>
-
-        <section>
-        </section>
+        {% block content %}
+        {% endblock content %}   
 
         <footer class="footer">
-            <p class="footer-p">Shayan Ataei || <a class="footer-a" href="https://github.com/shayan-ataei/home-page" target="_blank">GitHub</a></p>
+                <p class="footer-p">Shayan Ataei || 
+                    <a class="footer-a" href="https://github.com/shayan-ataei/home-page" target="_blank">
+                        GitHub
+                    </a>
+                </p>
         </footer>
-
     </body>
 
 </html>

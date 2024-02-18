@@ -17,15 +17,6 @@
     --fade-li-2: #854F6C;
     --li-box-shadow: rgba(0, 0, 0, 0.447);
 }
- 
-body {
-  background-color: var(--primary);
-  margin: 0;
-  padding-top: 70px;
-  font: 600 18px 'Source Sans Pro', sans-serif;
-  letter-spacing: 0.64px;
-  color: var(--topnav-text);
-}
 
 .topnav {
   background-color: var(--topnav-back);
@@ -64,37 +55,6 @@ body {
   text-align: center;
   color: var(--mycard-text);
   margin:20px 0 60px 0;
-}
-
-ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-
-li {
-  background-color: var(--primary);
-  background-image: linear-gradient(to right, var(--fade-li-1), var(--fade-li-2)); 
-  background-size: 50px 60px;
-  background-repeat: no-repeat;
-  cursor: pointer;
-  transition: transform .3s;
-  border-radius: 5px;
-  box-shadow: 0 5px 7px -1px var(--li-box-shadow);
-  padding: 15px;
-  padding-left: 70px;
-  margin-top: 5px;
-}
-
-li:hover {
-  background-image: linear-gradient(to right, var(--fade-li-2), var(--fade-li-1)); 
-  transform: scale(1.06);
-  text-decoration: none;
-}
-
-a:link, a:visited {
-  color: var(--li-text); 
-  text-decoration: none;
 }
 
 .main, .main h1 {
@@ -141,8 +101,48 @@ a:link, a:visited {
   vertical-align: top;
 }
 
-.home-color{
+.home-color {
   /* filter: invert(37%) sepia(16%) saturate(1386%) hue-rotate(275deg) brightness(85%) contrast(79%); */
   filter: brightness(0) saturate(100%) invert(2%) sepia(38%) saturate(7500%) hue-rotate(276deg) brightness(99%) contrast(101%);
 }
 
+.github {
+  width: 25px;
+  margin-bottom: -3px;
+  vertical-align: text-bottom;
+  filter: brightness(0) saturate(100%) invert(2%) sepia(38%) saturate(7500%) hue-rotate(276deg) brightness(99%) contrast(101%);
+}
+
+@media (max-width: 768px) {
+  .header > .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+  .brand {
+    order: 1;
+  }
+  .card {
+    max-width: 360px;
+  }
+  .feature {
+    flex-direction: column;
+  }
+  .feature-content,
+  .feature-image {
+    width: 100%;
+  }
+
+  .feature-image {
+    order: 1;
+  }
+  .feature-content {
+    order: 2;
+    text-align: center;
+  }
+  .feature-content .cta {
+    align-self: center;
+  }
+}
