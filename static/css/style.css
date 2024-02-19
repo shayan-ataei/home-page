@@ -18,23 +18,43 @@
     --li-box-shadow: rgba(0, 0, 0, 0.447);
 }
 
-.topnav {
+.topnav-l {
   background-color: var(--topnav-back);
   position: fixed;
   top: 0;
-  right: 0;
   left: 0;
+  right: 0;
   height: 21px;
   color: var(--topnav-space);
   padding: 10px;
 }
 
-.topnav a:link, .topnav a:visited  {
+.topnav-l a:link, .topnav-l a:visited  {
   text-decoration: none;
   color: var(--topnav-text); 
 }
 
-.topnav a:hover, .topnav a:active, .home-color {
+.topnav-l a:hover, .topnav-l a:active, .home-color {
+  text-decoration: none;
+  filter: brightness(0) saturate(100%) invert(100%) sepia(96%) saturate(2%) hue-rotate(331deg) brightness(105%) contrast(101%);
+}
+
+.topnav-r {
+  background-color: var(--topnav-back);
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 21px;
+  color: var(--topnav-space);
+  padding: 10px;
+}
+
+.topnav-r a:link, .topnav-r a:visited  {
+  text-decoration: none;
+  color: var(--topnav-text); 
+}
+
+.topnav-r a:hover, .topnav-r a:active, .home-color {
   text-decoration: none;
   filter: brightness(0) saturate(100%) invert(100%) sepia(96%) saturate(2%) hue-rotate(331deg) brightness(105%) contrast(101%);
 }
@@ -112,6 +132,72 @@
   vertical-align: text-bottom;
   filter: brightness(0) saturate(100%) invert(2%) sepia(38%) saturate(7500%) hue-rotate(276deg) brightness(99%) contrast(101%);
 }
+
+.username-inpt {
+  font-size: 20px;
+  background-color: var(--primary);
+  border-width: 1px;
+  border-style: solid;
+  border-color: var(--mycard-text);
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 8px;
+  margin-bottom: 0;
+}
+
+.password-inpt {
+  font-size: 20px;
+  background-color: var(--primary);
+  border-width: 1px;
+  border-style: solid;
+  border-color: var(--mycard-text);
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 8px;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+.email-inpt {
+  font-size: 20px;
+  background-color: var(--primary);
+  border-width: 1px;
+  border-style: solid;
+  border-color: var(--white);
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 8px;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+.submit-btn, .reset-btn, .login-btn, .register-btn {
+  background-color: var(--footer-line);
+  color: var(--topnav-text);
+  box-shadow: 0 5px 7px -1px var(--mycard-box-shadow); 
+  font-weight: bold;
+  border: none;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 12px;
+  padding-right: 12px;
+  border-radius: 6px;
+  margin-top: 10px;
+}
+
+
+
+
+
+
+
+
 
 @media (max-width: 768px) {
   .header > .container {

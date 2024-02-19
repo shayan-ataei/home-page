@@ -20,9 +20,6 @@ from account.views import *
 
 urlpatterns = [
     path("admin/", admin.site.urls),
-    path('', home),
-    path('home/', home),
-    path("account/", include("account.urls", namespace="account")),
-    path("product/", include("product.urls", namespace="product")),
-    path('contact_us/', contact_us),
+    path("", include("account.urls", namespace="account")),
+    path("", include("product.urls", namespace="product")),
 ]

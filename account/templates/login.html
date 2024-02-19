@@ -1,12 +1,29 @@
 {% extends "base.html" %}
+
 {% load static %}
 
         
 {% block content %}
+<section>
     <div class="mycard">
         <h1>Login</h1>
-        <ul>
-            <a href="../"><li>Back</li></a>
-        </ul>
+        <form action="{% url 'account:login' %}" method="post">
+            {% csrf_token %}
+            <div>
+                <label for="username">Username: </label>
+                <input class="username-inpt" type="text" name="username" id="username" value="shayan" placeholder="Username">
+                <!-- value="shayan" -->
+            </div>
+            <div>
+                <label for="password">Password: </label>
+                <input class="password-inpt" name="password" type="password" id="password" placeholder="Password">
+            </div>
+            <!-- <input type="submit" value="Login"> -->
+            <button class="submit-btn" type="submit">Login</button>
+            <button class="register-btn">
+                <a href="{% url 'account:register' %}">Register</a>
+            </button>
+        </form>
     </div>
+</section>
 {% endblock content %}

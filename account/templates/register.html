@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+        
+{% block content %}
+<section>
+    <div class="mycard">
+        <h1>Register</h1>
+        <form action="{% url 'account:register' %}" method="post">
+            {% csrf_token %}
+            <div>
+                <label for="username">Username: </label>
+                <input class="username-inpt" type="text" name="username" id="username" placeholder="Username">
+            </div>
+            <div>
+                <label for="password">Password: </label>
+                <input class="password-inpt" name="password" type="password" id="password" placeholder="Password">
+            </div>
+            <div>
+                <label for="email">Email: </label>
+                <input class="email-inpt" name="email" type="email" id="email" placeholder="Email">
+            </div>
+            <!-- <input type="submit" value="Login"> -->
+            <button class="submit-btn" type="submit">Register</button>
+            <button class="reset-btn" type="reset">Reset</button>
+            <button class="login-btn"><a href="{% url 'account:login' %}">Login</a></button>
+        </form>
+</section>
+{% endblock content %}

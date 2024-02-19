@@ -4,12 +4,14 @@
 
         
 {% block content %}
+<section>
     <div class="mycard">
         <h1>PRODUCT</h1>
         <ul>
-            <a href="/product/list_product"><li>List Product</li></a>
-            <a href="/product/get_product"><li>Get Product</li></a>
-            <a href="../"><li>Back</li></a>
+            <a href="{% url 'product:list_product' %}"><li>List Product</li></a>
+            <a href="{% url 'product:get_product' %}"><li>Get Product</li></a>
+            <a href="{% url 'account:home' %}"><li>Back</li></a>
         </ul>
     </div>
+</section>
 {% endblock content %}

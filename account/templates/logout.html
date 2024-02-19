@@ -1,12 +1,15 @@
 {% extends "base.html" %}
+
 {% load static %}
 
         
 {% block content %}
+<section>
     <div class="mycard">
         <h1>Logout</h1>
         <ul>
-            <a href="../"><li>Back</li></a>
+            <a href="{% url 'account:home' %}"><li>Back</li></a>
         </ul>
     </div>
+</section>
 {% endblock content %}
